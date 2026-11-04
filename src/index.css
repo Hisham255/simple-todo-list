@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #155f15;
+  --color-primary-dark: #0d3d0d;
+  --color-primary-light: #1f7a1f;
+  --color-primary-soft: #e8f3e8;
+  --color-ink: #101810;
+  --color-muted: #5c6b5c;
+  --color-paper: #f3f7f3;
+  --color-leaf: #c5dfc5;
+  --color-miss: #9b3a2f;
+  --color-must: #0a4a0a;
+  --font-brand: "Black Ops One", system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-paper);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 10% -10%, rgba(21, 95, 21, 0.12), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 0%, rgba(197, 223, 197, 0.45), transparent),
+    linear-gradient(180deg, #eef5ee 0%, #f3f7f3 40%, #eaf2ea 100%);
+  background-attachment: fixed;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.font-brand {
+  font-family: var(--font-brand);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-main {
+  flex: 1;
+}
